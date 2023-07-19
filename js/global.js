@@ -1,0 +1,2 @@
+const nav = '<div><a href="index.html"></a><img width="60px" height="60px" src="" alt=""></div><div class="middle"><a>Builder</a><a>Liste</a><a>Règles</a><a>Apprendre</a></div><div><a class="auth">Login</a><a class="auth">Register</a></div>'
+document.getElementsByTagName('nav')[0].innerHTML = nav

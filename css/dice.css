@@ -1,0 +1,69 @@
+.roller {
+  height: calc(100vh - 90px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 10px;
+}
+.roller .container {
+  width: calc(80vw + 2px);
+  height: 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F7CE65;
+  border-radius: 15px;
+}
+.roller .container .dice {
+  font-family: "Bold";
+  width: 4.5vw;
+  aspect-ratio: 1;
+  border: 1px solid black;
+  background-color: #FFFEBD;
+  font-size: 2.3vw;
+}
+.roller .container .row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.roller .container div.dice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+.roller .container div button {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+.roller .container div button#selected_amount {
+  filter: brightness(80%);
+}
+.roller .container div button#selected_dice {
+  filter: brightness(80%);
+}
+.roller .container div button:hover {
+  filter: brightness(120%);
+  cursor: pointer;
+}
+.roller .generator {
+  justify-content: space-evenly;
+  height: 15vw;
+}
+.roller h1 {
+  font-family: "Regular";
+  font-size: 3vw;
+  padding: 0;
+  margin: 0;
+}
+.roller p {
+  font-family: "Regular";
+  font-size: 2.8vw;
+  padding: 0px;
+  margin: 0px;
+}/*# sourceMappingURL=dice.css.map */

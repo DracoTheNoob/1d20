@@ -1,0 +1,84 @@
+@font-face{
+    font-family: 'Regular';
+    src: url('../font/JetBrainsMono-Regular.ttf')
+}
+
+@font-face {
+    font-family: 'Italic';
+    src: url('../font/JetBrainsMono-Italic.ttf');
+}
+
+@font-face{
+    font-family: 'Bold';
+    src: url('../font/JetBrainsMono-Bold.ttf')
+}
+
+$navbar: #930C10;
+$background: #FFFEBD;
+$window: #F7CE65;
+$navHeight: 80px;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding-top: $navHeight;
+    width: 100vw;
+    min-height: calc(100vh - $navHeight);
+    background-color: $background;
+
+    nav{
+        top: 0;
+        left: 0;
+        position: fixed;
+        width: 100vw;
+        height: $navHeight;
+        background-color: #930C10;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        div{
+            display: flex;
+            justify-content: space-evenly;
+            width: 25vw;
+
+            &.middle{
+                width: 40vw;
+            }
+
+            a{
+                font-family: 'Bold';
+                color: #fff;
+                text-decoration: none;
+                display: inline-block;
+                padding: 15px 20px;
+                position: relative;
+
+                &::after{
+                    background: none repeat scroll 0 0 transparent;
+                    bottom: 0;
+                    content: "";
+                    display: block;
+                    height: 2px;
+                    left: 50%;
+                    position: absolute;
+                    background: #fff;
+                    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                    width: 0;
+                }
+
+                &:hover{
+                    cursor: pointer;
+
+                    &::after{
+                        width: 100%; 
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+}

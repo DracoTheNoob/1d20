@@ -1,0 +1,11 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  width: 90vw;
+  padding: 15px;
+  background-color: #F7CE65;
+}/*# sourceMappingURL=index.css.map */

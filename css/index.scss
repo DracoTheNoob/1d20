@@ -1,0 +1,13 @@
+$window: #F7CE65;
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section{
+    width: 90vw;
+    padding: 15px;
+    background-color: $window;
+}

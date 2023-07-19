@@ -1,0 +1,69 @@
+@font-face {
+  font-family: "Regular";
+  src: url("../font/JetBrainsMono-Regular.ttf");
+}
+@font-face {
+  font-family: "Italic";
+  src: url("../font/JetBrainsMono-Italic.ttf");
+}
+@font-face {
+  font-family: "Bold";
+  src: url("../font/JetBrainsMono-Bold.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding-top: 80px;
+  width: 100vw;
+  min-height: calc(100vh - 80px);
+  background-color: #FFFEBD;
+}
+body nav {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100vw;
+  height: 80px;
+  background-color: #930C10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body nav div {
+  display: flex;
+  justify-content: space-evenly;
+  width: 25vw;
+}
+body nav div.middle {
+  width: 40vw;
+}
+body nav div a {
+  font-family: "Bold";
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+body nav div a::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+body nav div a:hover {
+  cursor: pointer;
+}
+body nav div a:hover::after {
+  width: 100%;
+  left: 0;
+}/*# sourceMappingURL=global.css.map */
